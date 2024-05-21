@@ -98,7 +98,7 @@ const Form=({username,setUsername,password,setPassword,label,onSubmit})=>{
     </div>
 
     <div className="form-group">
-        <label>Password:</label>
+        <label>Password: </label>
         <input type="password" id="username" value={password} onChange={(event)=>{
             setPassword(event.target.value);
         }}/>    
