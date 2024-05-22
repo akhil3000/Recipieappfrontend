@@ -29,7 +29,7 @@ const Login=()=>{
      
       event.preventDefault();
       try{
-      const response=await axios.post("http://localhost:3000/auth/login",{
+      const response=await axios.post("https://recipieappbackend-6.onrender.com/auth/login",{
           username,
           password,
         });//from frontend we are passing login credentials to backend if they are correct we will
@@ -61,7 +61,7 @@ const Register=()=>{
      const onSubmit=async(event)=>{
        event.preventDefault();
         try{
-          await axios.post("http://localhost:3000/auth/register",{
+          await axios.post("https://recipieappbackend-6.onrender.com/auth/register",{
             username,
             password,
           });//Passing User credentials to Backend

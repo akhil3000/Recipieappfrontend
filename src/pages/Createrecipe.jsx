@@ -36,7 +36,7 @@ const Createrecipe = () => {
    const onSubmit=async(event)=>{
     event.preventDefault();
     try{
-       await axios.post("http://localhost:3000/recipies/createrecipie",recipie,{
+       await axios.post("https://recipieappbackend-6.onrender.com/recipies/createrecipie",recipie,{
         headers:{authorization:cookies.access_token},
        });
        alert("Recipie Created")

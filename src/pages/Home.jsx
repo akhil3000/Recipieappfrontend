@@ -12,7 +12,7 @@ const Home = () => {
      const fetchRecipie=async()=>{
       
       try{
-       const response= await axios.get("http://localhost:3000/recipies/getrecipie");
+       const response= await axios.get("https://recipieappbackend-6.onrender.com/recipies/getrecipie");
        setRecipies(response.data);
        console.log(response.data);
       }catch(err){
@@ -27,7 +27,7 @@ const Home = () => {
      
      
       try{
-        const response= await axios.get(`http://localhost:3000/recipies/savedRecipies/ids/${userID}`);
+        const response= await axios.get(`https://recipieappbackend-6.onrender.com/recipies/savedRecipies/ids/${userID}`);
         setSavedRecipies(response.data.savedRecipies);
 
         
@@ -56,7 +56,7 @@ const Home = () => {
    const saveRecipie=async(recipieID)=>{
      
     try{
-      const response= await axios.put("http://localhost:3000/recipies/saverecipie",{
+      const response= await axios.put("https://recipieappbackend-6.onrender.com/recipies/saverecipie",{
         recipieID,
         userID
       },{headers:{authorization:cookies.access_token}});

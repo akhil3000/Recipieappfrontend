@@ -12,7 +12,7 @@ const Saverecipie = () => {
     const fetchRecipie=async()=>{
       
       try{
-       const response= await axios.get(`http://localhost:3000/recipies/savedRecipies/${userID}`,{
+       const response= await axios.get(`https://recipieappbackend-6.onrender.com/recipies/savedRecipies/${userID}`,{
         headers:{authorization:cookies.access_token},
        });
        setRecipies(response.data.savedRecipies);
