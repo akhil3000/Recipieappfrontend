@@ -1,10 +1,10 @@
 import React from 'react'
-
+import "./Home.css"
 const footer = () => {
   return (
-    <div>
-        <p>Developed By Akhil Polisetty</p>
-        
+    <div className="Footer">
+      
+     
     </div>
   )
 }

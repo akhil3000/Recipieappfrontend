@@ -23,5 +23,23 @@
   justify-content:space-around;
   flex-wrap:wrap;
 }
-
-
+.Footer{
+  margin-bottom:100px;
+}
+.about-us {
+  padding:2rem;
+  text-align: center;
+}
+.about-photo {
+  margin-top:20px;
+  height:100px;
+  width:100px;
+  
+}
+.author-info {
+  padding: 30px;
+  border:1px solid dotted;
+}
+.about-content {
+  padding: 30px;
+}

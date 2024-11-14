@@ -26,6 +26,7 @@ const Navbar = () => {
       <button onClick={logout}>Logout</button>
       </>
     )}
+    <Link to="/about">AboutUs</Link>
    
     </div>
   )

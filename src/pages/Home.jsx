@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import axios from "axios";
 import { useGetUserID } from '../hooks/useGetUserID';
 import {useCookies} from "react-cookie";
+import footer from './Footer';
 import "./Home.css";
 const Home = () => {
 
@@ -94,6 +95,7 @@ const Home = () => {
     </ul>
 
    </div>
+   <footer/>
   </div>
   )
 }
