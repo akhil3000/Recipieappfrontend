@@ -1,0 +1,25 @@
+.Ingredients{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:10px;
+    
+}
+
+.Home{
+    text-align:center;
+}
+
+.container{
+  height:100px;
+  
+}
+
+.auth{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}

@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import axios from "axios";
 import { useGetUserID } from '../hooks/useGetUserID';
 import {useCookies} from "react-cookie";
+import "./Home.css";
 const Home = () => {
 
    const[recipies,setRecipies]=useState([]);
@@ -70,13 +71,14 @@ const Home = () => {
    const isRecipieSaved=(id)=>savedRecipies.includes(id);
 
   return (
-    <div>
+    <div className="Home">
     <h1>Recipes</h1>
-    <ul>
+    <div>
+    <ul className="Ingredients">
       {recipies.map((recipie) => (
         <li key={recipie._id}>
         
-          <div>
+          <div className="container">
             <h2>{recipie.name}</h2>
             <button onClick={()=>saveRecipie(recipie._id) } 
             disabled={isRecipieSaved(recipie._id)} >Save</button>
@@ -91,7 +93,7 @@ const Home = () => {
       ))}
     </ul>
 
-   
+   </div>
   </div>
   )
 }

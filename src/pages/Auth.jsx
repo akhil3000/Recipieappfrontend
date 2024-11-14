@@ -3,6 +3,7 @@ import axios from 'axios';
 import {useCookies} from "react-cookie";
 import {useNavigate} from "react-router-dom";
 import Footer from './Footer';
+import "./Home.css"
 export const Auth = () => {
   return (
     <>
@@ -11,9 +12,8 @@ export const Auth = () => {
      <Register/>
     
     </div>
-    <div>
+    
      <Footer/>
-     </div>
      </>
   )
 }
@@ -85,7 +85,7 @@ const Register=()=>{
 
 const Form=({username,setUsername,password,setPassword,label,onSubmit})=>{
   return(
-   <div>
+   <div className="Auth">
     <div className="auth-container">
     <form onSubmit={onSubmit}>
      <h2>{label}</h2>   

@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import axios from "axios";
 import { useGetUserID } from '../hooks/useGetUserID';
 import {useCookies} from "react-cookie";
+import "./Home.css"
 const Saverecipie = () => {
 
   const[recipies,setRecipies]=useState([]);
@@ -29,9 +30,9 @@ const Saverecipie = () => {
   },[])
 
   return (
-    <div>
+    <div className="Home">
     <h1>SavedRecipes</h1>
-    <ul>
+    <ul className="Ingredients">
       {recipies.map((recipie) => (
         <li key={recipie._id}>
         
